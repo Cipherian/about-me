@@ -31,12 +31,12 @@ coffee = coffee.toLowerCase();
 switch (coffee) {
   case "light roast":
     alert("That is indeed my favorite roast");
-    points += 1;
+    points += 2;
     console.log(points);
     break;
   case "medium roast":
     alert("That is an ok coffee roast");
-    points += 0.5;
+    points += 1;
     console.log(points);
     break;
   case "dark roast":
@@ -108,47 +108,45 @@ while (counter > 0) {
 }
 }
 
-// const favoriteColors = [
-//   "green",
-//   "silver",
-//   "gold",
-//   "black",
-//   "blue",
-//   "gray",
-//   "grey",
-//   "red",
-// ];
-// const badColors = [
-//   "purple",
-//   "pink",
-//   "teal",
-//   "orange",
-//   "chartreuse",
-//   "lime",
-//   "neon",
-//   "white",
-//   "yellow",
-// ];
+const favoriteColors = [
+  "green",
+  "silver",
+  "gold",
+  "black",
+  "blue",
+  "gray",
+  "grey",
+  "red",
+];
+const badColors = [
+  "purple",
+  "pink",
+  "teal",
+  "orange",
+  "chartreuse",
+  "lime",
+  "neon",
+  "white",
+];
 
-// let timer = 6;
-// let colorAsk;
+let timer = 6;
+let colorAsk;
 
-// while (timer > 0) {
-//   colorAsk = prompt("What are are colors that I like?");
-//   if (favoriteColors == colorAsk) {
-//     alert("That is one of my favorite colors");
-//     points++;
-//     timer--;
-//   } else if (badColors == colorAsk) {
-//     alert("That is not one of my favorite colors");
-//     timer--;
-//   } else {
-//     alert("I didn't think of that color, sorry!");
-//     timer--;
-//   }
-// }
+while (timer > 0) {
+  colorAsk = prompt("What are the colors that I like?");
+  for (i = 0; i < favoriteColors.length; i++) {
+    if (colorAsk.toLowerCase() === favoriteColors[i]) {
+      alert("That is one of my favorite colors");
+      points++;
+      timer--;
+    } else if (colorAsk.toLowerCase() === badColors[i]) {
+      alert("That is not one of my favorite colors");
+      timer--;
+    } 
+  }
+}
 
-alert("You got " + points + "points!");
+// alert("You got " + points + "points!");
 
 // let numberGuess = prompt("Guess a random number");
 // let intNumberGuess = parseInt(numberGuess);
