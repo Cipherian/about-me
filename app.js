@@ -26,21 +26,25 @@ if (askAge == 31) {
   alert("You are not even close.");
 }
 
-let coffee = prompt("What is my favorite coffee roast?");
+let coffee = prompt("What is my favorite coffee roast? Light, medium or dark?");
 coffee = coffee.toLowerCase();
 switch (coffee) {
   case "light roast":
+    case "light":
     alert("That is indeed my favorite roast");
     points += 2;
     console.log(points);
     break;
   case "medium roast":
+    case "medium":
     alert("That is an ok coffee roast");
     points += 1;
     console.log(points);
     break;
   case "dark roast":
+    case "dark":
     alert("Dark roast is too bitter for me.");
+    break;
   default:
     alert(
       `Sorry, that is not a coffee roast. Please write dark, medium or light roast!`
@@ -134,7 +138,7 @@ let colorAsk;
 
 while (timer > 0) {
   colorAsk = prompt("What are the colors that I like?");
-  for (i = 0; i < favoriteColors.length; i++) {
+  for (let i = 0; i < favoriteColors.length; i++) {
     if (colorAsk.toLowerCase() === favoriteColors[i]) {
       alert("That is one of my favorite colors");
       points++;
@@ -146,7 +150,7 @@ while (timer > 0) {
   }
 }
 
-// alert("You got " + points + "points!");
+alert("You got " + points + "points!");
 
 // let numberGuess = prompt("Guess a random number");
 // let intNumberGuess = parseInt(numberGuess);
