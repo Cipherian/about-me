@@ -139,7 +139,7 @@ while (counter > 0) {
 //     alert("That is one of my favorite colors");
 //     points++;
 //     timer--;
-//   } else if (badColors = colorAsk) {
+//   } else if (badColors == colorAsk) {
 //     alert("That is not one of my favorite colors");
 //     timer--;
 //   } else {
@@ -158,7 +158,7 @@ alert("You got " + points + "points!");
 // let num = min + Math.floor(Math.random() * (max - min));
 
 // while (counter > 0) {
-//   if (intNumberGuess === num) {
+//   if (intNumberGuess == num) {
 //     alert("That is correct.");
 //     points++;
 //     stop;
