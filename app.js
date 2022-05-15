@@ -6,7 +6,7 @@ function questions(answer) {
   if(answer === "yes" || answer === "y") {
     return true;
   } else {
-    return false;
+    return false.toArray;
   }
 }
 
