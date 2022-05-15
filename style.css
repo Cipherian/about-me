@@ -1,6 +1,9 @@
 html {
   font-size: 20px;
 }
+body {
+  background-color: black;
+}
 
 header {
   background-color: rgb(197, 195, 195);
@@ -21,7 +24,7 @@ h2 {
   font-size: 1.5rem;
   text-decoration: underline maroon;
   padding-top: 10px;
-  color: blac;
+  color: black;
 }
 .edu {
   padding-left: 335px;
