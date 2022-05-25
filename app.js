@@ -162,16 +162,20 @@ const badColors = [
 let timer = 6;
 let colorAsk;
 
-while (timer > 0) {
+while (timer > 0 && colorAsk != false) {
   colorAsk = prompt("What are the colors that I like?");
   for (let i = 0; i < favoriteColors.length; i++) {
     if (colorAsk.toLowerCase() === favoriteColors[i]) {
       alert("That is one of my favorite colors");
-      points++;
+      points+=2;
       timer--;
     } else if (colorAsk.toLowerCase() === badColors[i]) {
       alert("That is not one of my favorite colors");
       timer--;
+    }else if (colorAsk == "") {
+      alert("Why are you skipping my question? You are making me sad")
+      timer--;
+      points--;
     } 
   }
 }
