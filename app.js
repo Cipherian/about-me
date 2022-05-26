@@ -11,19 +11,10 @@ function questions(answer) {
 }
 
 let question1 = prompt("Is my age 31?");
-console.log(questions(question1));
-
 let question2 = prompt("Is my favorite coffee light roast?");
-console.log(questions(question2));
-
 let question3 = prompt("Is my height in centimeters 198?");
-console.log(questions(question3));
-
 let question4 = prompt("Is my favorite smoothie blackberry?");
-console.log(questions(question4));
-
 let question5 = prompt("Is my name Daniel?");
-console.log(questions(question5));
 
 
 let userName = prompt("What is your name?");
@@ -32,22 +23,18 @@ let points = 0;
   userName = userName.toUpperCase();
   alert("Hello and welcome "+ userName + "!");
   points++;
-  console.log(points);
 }
 
 let askAge = prompt("What is my age?");
 if (askAge == 31) {
   alert("You guessed my age correctly!");
   points += 2;
-  console.log(points);
 } else if (askAge > 31 && askAge <= 35) {
   alert("I'm not that old yet, but you are close.");
   points += 1;
-  console.log(points);
 } else if (askAge < 31 && askAge >= 25) {
   alert("I am not that young, but you are close.");
   points += 1;
-  console.log(points);
 } else {
   alert("You are not even close.");
 }
@@ -59,13 +46,11 @@ switch (coffee) {
     case "light":
     alert("That is indeed my favorite roast");
     points += 2;
-    console.log(points);
     break;
   case "medium roast":
     case "medium":
     alert("That is an ok coffee roast");
     points += 1;
-    console.log(points);
     break;
   case "dark roast":
     case "dark":
@@ -81,15 +66,12 @@ let height = prompt("What is my height in centimeters?");
 if (height == 198) {
   alert("That is my height! Nice guess.");
   points += 2;
-  console.log(points);
 } else if (height > 198 && height <= 210) {
   alert("That is too tall, but you are close.");
   points += 1;
-  console.log(points);
 } else if (height < 198 && height >= 185) {
   alert("That is too short, but you are close.");
   points += 1;
-  console.log(points);
 } else {
   alert("That is not even close.");
 }
@@ -102,22 +84,18 @@ switch (smoothie) {
   case "blackberry":
     alert("That is indeed my favorite berry to use with smoothies");
     points += 2;
-    console.log(points);
     break;
   case "blueberry":
     alert("I don't care much for blueberries, but they are alright.");
     points += 1;
-    console.log(points);
     break;
   case "strawberry":
     alert("Strawberries are good, but not my favorite.");
     points += 1;
-    console.log(points);
     break;
   default:
     alert("That is not one of the berries that I asked about");
     points += 1;
-    console.log(points);
     break;
 }
 
